@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- ISSO DAQUI É HTML, MAS O QUE É HTML?-->
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <h1>QUERO VER FAZER FUNCIONAR ;D</h1>
+  <div class="container">
+    <div class="header">Calculadora</div>
+    <input id="resultado" type="text" class="result" />
+    <div class="second-row">
+      <input
+        type="button"
+        name=""
+        value="7"
+        class="global"
+        onclick="clicouNoNumero(7)"
+      />
+      <input
+        type="button"
+        name=""
+        value="8"
+        class="global"
+        onclick="clicouNoNumero(8)"
+      />
+      <input
+        type="button"
+        name=""
+        value="9"
+        class="global"
+        onclick="clicouNoNumero(9)"
+      />
+      <input
+        type="button"
+        name=""
+        value="/"
+        class="global"
+        onclick="clicouNoOperador('/')"
+      />
+    </div>
+    <div class="third-row">
+      <input
+        type="button"
+        name=""
+        value="4"
+        class="global"
+        onclick="clicouNoNumero(4)"
+      />
+      <input
+        type="button"
+        name=""
+        value="5"
+        class="global"
+        onclick="clicouNoNumero(5)"
+      />
+      <input
+        type="button"
+        name=""
+        value="6"
+        class="global"
+        onclick="clicouNoNumero(6)"
+      />
+      <input
+        type="button"
+        name=""
+        value="X"
+        class="global"
+        onclick="clicouNoOperador('X')"
+      />
+    </div>
+    <div class="fourth-row">
+      <input
+        type="button"
+        name=""
+        value="1"
+        class="global"
+        onclick="clicouNoNumero(1)"
+      />
+      <input
+        type="button"
+        name=""
+        value="2"
+        class="global"
+        onclick="clicouNoNumero(2)"
+      />
+      <input
+        type="button"
+        name=""
+        value="3"
+        class="global"
+        onclick="clicouNoNumero(3)"
+      />
+      <input
+        type="button"
+        name=""
+        value="-"
+        class="global"
+        onclick="clicouNoOperador('-')"
+      />
+    </div>
+    <div class="conflict">
+      <div class="left">
+        <input
+          type="button"
+          name=""
+          value="0"
+          onclick="clicouNoNumero(0)"
+          class="big"
+        />
+        <input type="button" name="" value="" class="small" />
+        <input
+          type="button"
+          name=""
+          value="Del"
+          class="red small white-text top-margin"
+        />
+        <input
+          type="button"
+          name=""
+          value="="
+          onclick="resultado()"
+          class="green white-text big top-margin"
+        />
+      </div>
+      <div class="right">
+        <input
+          type="button"
+          name=""
+          value="+"
+          class="global grey plus"
+          onclick="clicouNoOperador('+')"
+        />
+      </div>
+    </div>
+  </div>
+  <html></html>
+</html>
+
+<script>
+  //ISSO DAQUI É JAVASCRIPT, MAS O QUE É JAVASCRIPT?
+  let operando = "";
+  let primeiroNumero = 0;
+  let segundoNumero = 0;
+
+  function clicouNoNumero(numero) {
+    escreverNaTela(numero);
+  }
+
+  function clicouNoOperador(operador) {
+    escreverNaTela(operador);
+  }
+
+  function resultado() {
+    //VOCÊS PRECISAM FAZER A SOMA DA CALCULADORA FUNCIONAR
+    //ISSO EM VERDE É UM COMENTÁRIO, O COMPUTADOR IGNORA COMENTÁRIOS
+    //SERVE PARA PROGRAMADORES ESCREVEREM DENTRO DO CÓDIGO, COMO ESTOU FAZENDO AGORA KKKK
+  }
+
+  function escreverNaTela(valor) {
+    document.getElementById("resultado").value = valor;
+  }
+</script>
